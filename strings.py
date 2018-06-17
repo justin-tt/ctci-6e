@@ -1,6 +1,6 @@
 # https://stackoverflow.com/questions/9141830/explain-the-use-of-a-bit-vector-for-determining-if-all-characters-are-unique
 
-def is_unique_char(string): 
+def has_unique_chars(string): 
     ''' 
     assuming only lower case a-z are in strings.
     a - z flags are stored via bit positions,
@@ -46,6 +46,6 @@ assert(is_in_bit_dictionary(test_bit_dictionary, test_bit_char2) == False)
 test_bit_dictionary = update_bit_dictionary(test_bit_dictionary, test_bit_char2)
 assert(is_in_bit_dictionary(test_bit_dictionary, test_bit_char2) == True)
 
-assert(is_unique_char("abcdz") == True)
-assert(is_unique_char("abcda") == False)
+assert(has_unique_chars("abcdz") == True)
+assert(has_unique_chars("abcda") == False)
 
